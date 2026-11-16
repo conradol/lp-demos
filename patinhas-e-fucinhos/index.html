@@ -33,12 +33,13 @@ button{font:inherit}
 /* ——— Hero: one composition ——— */
 .hero{
   position:relative;min-height:100svh;display:grid;align-items:end;
-  color:#fff;padding:72px 0 56px;isolation:isolate;
+  color:#fff;padding:88px 0 72px;isolation:isolate;
 }
 .hero__media{
   position:absolute;inset:0;z-index:-2;
   background:
-    linear-gradient(180deg, rgba(8,6,5,.35) 0%, rgba(8,6,5,.15) 35%, rgba(8,6,5,.72) 78%, rgba(8,6,5,.92) 100%),
+    linear-gradient(105deg, rgba(8,6,5,.78) 0%, rgba(8,6,5,.45) 42%, rgba(8,6,5,.2) 68%, rgba(8,6,5,.55) 100%),
+    linear-gradient(180deg, rgba(8,6,5,.25) 0%, transparent 35%, rgba(8,6,5,.88) 100%),
     var(--hero) center/cover no-repeat;
   transform:scale(1.04);
   animation:heroDrift 18s ease-in-out infinite alternate;
@@ -65,8 +66,8 @@ button{font:inherit}
 .hero__copy{max-width:18ch}
 .hero h1{
   font-family:var(--display),Georgia,serif;font-weight:600;
-  font-size:clamp(44px,8.2vw,92px);line-height:.95;letter-spacing:-.035em;
-  margin:0 0 22px;
+  font-size:clamp(40px,7.2vw,78px);line-height:.96;letter-spacing:-.035em;
+  margin:0 0 18px;text-shadow:0 2px 40px rgba(0,0,0,.35);
 }
 .hero h1 em{font-style:italic;font-weight:500;color:var(--soft)}
 .hero__lead{font-size:clamp(16px,1.6vw,19px);max-width:38ch;color:rgba(255,255,255,.82);margin-bottom:28px}
@@ -169,17 +170,20 @@ footer{padding:40px 0 72px;color:var(--muted);font-size:13px;text-align:center}
 /* Segment accents */
 html[data-segment="odonto"] .hero__media{
   background:
-    linear-gradient(180deg, rgba(18,28,34,.25) 0%, rgba(18,28,34,.1) 40%, rgba(12,22,28,.78) 100%),
+    linear-gradient(105deg, rgba(10,18,24,.82) 0%, rgba(10,18,24,.4) 48%, rgba(10,18,24,.18) 72%, rgba(10,18,24,.6) 100%),
+    linear-gradient(180deg, rgba(10,18,24,.2) 0%, transparent 40%, rgba(8,14,18,.9) 100%),
     var(--hero) center/cover no-repeat;
 }
 html[data-segment="fisio"] .hero__media{
   background:
-    linear-gradient(180deg, rgba(20,32,24,.3) 0%, rgba(20,32,24,.12) 38%, rgba(14,24,18,.82) 100%),
+    linear-gradient(105deg, rgba(12,24,18,.8) 0%, rgba(12,24,18,.38) 48%, rgba(12,24,18,.15) 72%, rgba(12,24,18,.58) 100%),
+    linear-gradient(180deg, rgba(12,24,18,.22) 0%, transparent 40%, rgba(8,16,12,.9) 100%),
     var(--hero) center/cover no-repeat;
 }
 html[data-segment="pet"] .hero__media{
   background:
-    linear-gradient(180deg, rgba(42,24,16,.28) 0%, rgba(42,24,16,.12) 40%, rgba(28,14,10,.84) 100%),
+    linear-gradient(105deg, rgba(32,14,10,.8) 0%, rgba(32,14,10,.4) 48%, rgba(32,14,10,.18) 72%, rgba(32,14,10,.58) 100%),
+    linear-gradient(180deg, rgba(32,14,10,.22) 0%, transparent 40%, rgba(22,10,8,.9) 100%),
     var(--hero) center/cover no-repeat;
 }
 
