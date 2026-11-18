@@ -1,305 +1,200 @@
 <!doctype html>
-<html lang="pt-BR" data-segment="pet">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Zeus Pet Spa · Canoas, RS</title>
-<meta name="description" content="Cuidado com calma para cães e gatos: produtos certos para cada pelagem, horário marcado e um espaço onde o pet sai feliz — e o tutor também.">
+<title>Zeus Pet Spa | Banho e tosa no Mathias Velho, Canoas</title>
+<meta name="description" content="Banho e tosa com cuidado e carinho, loja de produtos e remédios para pets na R. Mato Grosso, 54, Mathias Velho, Canoas. Nota 4,7 no Google, com 53 avaliações.">
+<meta name="theme-color" content="#141b2d">
+<link rel="canonical" href="https://conradol.github.io/lp-demos/zeus-pet-spa/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://conradol.github.io/lp-demos/zeus-pet-spa/">
+<meta property="og:title" content="Zeus Pet Spa | Banho e tosa no Mathias Velho, Canoas">
+<meta property="og:description" content="Nota 4,7 no Google, com 53 avaliações. Banho e tosa agendados pelo WhatsApp.">
+<meta property="og:image" content="https://conradol.github.io/lp-demos/zeus-pet-spa/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23141b2d'/%3E%3Cpath d='M10 10H54V54H10Z' fill='none' stroke='%23d6b978' stroke-width='2'/%3E%3Cpath d='M22 21H42L22 43H42' fill='none' stroke='%23d6b978' stroke-width='4.5' stroke-linejoin='miter'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Instrument+Serif:ital@0;1&family=Syne:wght@500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#0c0a09;--paper:#faf7f2;--muted:#6b635a;--line:rgba(12,10,9,.1);
-  --accent:#e05a33;--accent-2:#a33c1c;--soft:#ffd7c8;
-  --display:'Libre Baskerville';--body:'Nunito';
-  --hero:url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1600&q=80');
-  --radius:2px;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--body),system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;overflow-x:hidden}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-button{font:inherit}
-
-.demo-bar{
-  position:fixed;inset:0 0 auto;z-index:50;
-  background:#0c0a09;color:#fff;font-size:12px;letter-spacing:.02em;
-  text-align:center;padding:9px 16px;
-}
-
-/* ——— Hero: one composition ——— */
-.hero{
-  position:relative;min-height:100svh;display:grid;align-items:end;
-  color:#fff;padding:88px 0 72px;isolation:isolate;
-}
-.hero__media{
-  position:absolute;inset:0;z-index:-2;
-  background:
-    linear-gradient(105deg, rgba(8,6,5,.78) 0%, rgba(8,6,5,.45) 42%, rgba(8,6,5,.2) 68%, rgba(8,6,5,.55) 100%),
-    linear-gradient(180deg, rgba(8,6,5,.25) 0%, transparent 35%, rgba(8,6,5,.88) 100%),
-    var(--hero) center/cover no-repeat;
-  transform:scale(1.04);
-  animation:heroDrift 18s ease-in-out infinite alternate;
-}
-@keyframes heroDrift{to{transform:scale(1.1) translateY(-1.5%)}}
-.hero__grain{
-  position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.18;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
-}
-.wrap{width:min(1120px, calc(100% - 40px));margin-inline:auto}
-.hero__top{display:flex;justify-content:space-between;align-items:center;position:absolute;top:52px;left:50%;transform:translateX(-50%);width:min(1120px, calc(100% - 40px))}
-.brand{
-  font-family:var(--display),Georgia,serif;font-weight:600;font-size:clamp(22px,2.4vw,30px);
-  letter-spacing:-.02em;line-height:1;
-}
-.brand span{opacity:.7;font-style:italic;font-weight:500;margin-left:.35em;font-size:.72em}
-.pill{
-  display:inline-flex;align-items:center;gap:8px;
-  border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(8px);
-  background:rgba(255,255,255,.08);color:#fff;border-radius:999px;
-  padding:10px 16px;font-size:13px;font-weight:600;
-}
-.pill b{font-weight:700}
-.hero__copy{max-width:18ch}
-.hero h1{
-  font-family:var(--display),Georgia,serif;font-weight:600;
-  font-size:clamp(40px,7.2vw,78px);line-height:.96;letter-spacing:-.035em;
-  margin:0 0 18px;text-shadow:0 2px 40px rgba(0,0,0,.35);
-}
-.hero h1 em{font-style:italic;font-weight:500;color:var(--soft)}
-.hero__lead{font-size:clamp(16px,1.6vw,19px);max-width:38ch;color:rgba(255,255,255,.82);margin-bottom:28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  background:var(--accent);color:#fff;font-weight:700;font-size:15px;
-  padding:16px 26px;border-radius:999px;border:0;cursor:pointer;
-  transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
-  box-shadow:0 10px 30px rgba(0,0,0,.25);
-}
-.btn:hover,.btn:focus-visible{transform:translateY(-2px);background:var(--accent-2);box-shadow:0 16px 40px rgba(0,0,0,.3)}
-.btn--ghost{
-  background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);
-  box-shadow:none;
-}
-.btn--ghost:hover,.btn--ghost:focus-visible{background:rgba(255,255,255,.1);border-color:#fff}
-.scroll-hint{
-  position:absolute;bottom:22px;left:50%;transform:translateX(-50%);
-  font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;
-  animation:fadePulse 2.4s ease-in-out infinite;
-}
-@keyframes fadePulse{50%{opacity:.2}}
-
-/* ——— Reveal ——— */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s ease}
-.reveal.is-in{opacity:1;transform:none}
-
-/* ——— Sections ——— */
-section{padding:96px 0}
-.eyebrow{
-  font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
-  color:var(--accent-2);margin-bottom:14px;
-}
-h2{
-  font-family:var(--display),Georgia,serif;font-weight:600;
-  font-size:clamp(32px,4.6vw,52px);line-height:1.05;letter-spacing:-.03em;
-  margin-bottom:18px;max-width:16ch;
-}
-.lead{color:var(--muted);font-size:17px;max-width:52ch;margin-bottom:40px}
-
-.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-.photo-stack{position:relative;min-height:480px}
-.photo-stack__main{
-  position:absolute;inset:0 12% 8% 0;border-radius:28px;overflow:hidden;
-  background:center/cover no-repeat;box-shadow:0 30px 80px rgba(12,10,9,.18);
-}
-.photo-stack__float{
-  position:absolute;right:0;bottom:0;width:48%;aspect-ratio:4/5;border-radius:24px;
-  overflow:hidden;border:6px solid var(--paper);
-  background:center/cover no-repeat;box-shadow:0 20px 50px rgba(12,10,9,.2);
-  animation:floatY 5.5s ease-in-out infinite;
-}
-@keyframes floatY{50%{transform:translateY(-10px)}}
-
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:24px;overflow:hidden}
-.service{background:var(--paper);padding:32px 28px;min-height:180px}
-.service strong{
-  display:block;font-family:var(--display),Georgia,serif;font-size:24px;font-weight:600;
-  letter-spacing:-.02em;margin-bottom:10px;
-}
-.service p{color:var(--muted);font-size:15px}
-
-.quote-band{
-  background:linear-gradient(135deg, var(--accent-2), var(--accent));
-  color:#fff;border-radius:32px;padding:clamp(36px,6vw,64px);
-  display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;
-}
-.quote-band .score{
-  font-family:var(--display),Georgia,serif;font-size:clamp(64px,10vw,96px);
-  line-height:1;font-weight:600;
-}
-.quote-band .stars{letter-spacing:4px;color:#ffd76a;margin-bottom:8px}
-.quote-band p{font-family:var(--display),Georgia,serif;font-size:clamp(22px,3vw,34px);line-height:1.2;font-style:italic;max-width:28ch}
-.quote-band small{display:block;margin-top:14px;opacity:.8;font-style:normal;font-family:var(--body),sans-serif;font-size:14px}
-
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}
-.step{padding:28px 8px 8px 0;border-top:1px solid var(--line)}
-.step::before{
-  counter-increment:step;content:"0" counter(step);
-  display:block;font-family:var(--display),Georgia,serif;font-size:40px;
-  color:var(--accent);margin-bottom:14px;letter-spacing:-.04em;
-}
-.step h3{font-family:var(--display),Georgia,serif;font-size:24px;margin-bottom:8px}
-.step p{color:var(--muted);font-size:15px}
-
-.final{
-  position:relative;border-radius:36px;overflow:hidden;color:#fff;
-  padding:clamp(48px,8vw,88px) clamp(28px,5vw,64px);
-  background:
-    linear-gradient(120deg, rgba(8,6,5,.78), rgba(8,6,5,.45)),
-    var(--ctaImage) center/cover no-repeat;
-}
-.final h2{color:#fff;max-width:14ch}
-.final .lead{color:rgba(255,255,255,.8)}
-.final-meta{display:flex;flex-wrap:wrap;gap:18px 28px;margin-top:28px;font-size:14px;opacity:.9}
-
-footer{padding:40px 0 72px;color:var(--muted);font-size:13px;text-align:center}
-
-/* Segment accents */
-html[data-segment="odonto"] .hero__media{
-  background:
-    linear-gradient(105deg, rgba(10,18,24,.82) 0%, rgba(10,18,24,.4) 48%, rgba(10,18,24,.18) 72%, rgba(10,18,24,.6) 100%),
-    linear-gradient(180deg, rgba(10,18,24,.2) 0%, transparent 40%, rgba(8,14,18,.9) 100%),
-    var(--hero) center/cover no-repeat;
-}
-html[data-segment="fisio"] .hero__media{
-  background:
-    linear-gradient(105deg, rgba(12,24,18,.8) 0%, rgba(12,24,18,.38) 48%, rgba(12,24,18,.15) 72%, rgba(12,24,18,.58) 100%),
-    linear-gradient(180deg, rgba(12,24,18,.22) 0%, transparent 40%, rgba(8,16,12,.9) 100%),
-    var(--hero) center/cover no-repeat;
-}
-html[data-segment="pet"] .hero__media{
-  background:
-    linear-gradient(105deg, rgba(32,14,10,.8) 0%, rgba(32,14,10,.4) 48%, rgba(32,14,10,.18) 72%, rgba(32,14,10,.58) 100%),
-    linear-gradient(180deg, rgba(32,14,10,.22) 0%, transparent 40%, rgba(22,10,8,.9) 100%),
-    var(--hero) center/cover no-repeat;
-}
-
-@media (max-width:900px){
-  .split,.services,.steps,.quote-band{grid-template-columns:1fr}
-  .photo-stack{min-height:360px}
-  .photo-stack__float{width:42%}
-  .hero{align-items:end;padding-bottom:80px}
-  .hero__copy{max-width:none}
-  section{padding:72px 0}
-}
-@media (prefers-reduced-motion:reduce){
-  .hero__media,.photo-stack__float,.scroll-hint{animation:none}
-  .reveal{opacity:1;transform:none;transition:none}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="media/hero-tall.webp" media="(max-width: 899px)">
+<link rel="preload" as="image" href="media/hero-wide.webp" media="(min-width: 900px)">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/sections.css">
+<script>document.documentElement.classList.add('has-js');</script>
 </head>
 <body>
-<div class="demo-bar" role="note">Demonstração criada por Conrado Lemos para Zeus Pet Spa · não é o site oficial</div>
+<p class="ribbon" role="note">Demonstração feita para o Zeus Pet Spa. Ainda não é o site oficial.</p>
 
-<section class="hero" id="topo">
-  <div class="hero__media" aria-hidden="true"></div>
-  <div class="hero__grain" aria-hidden="true"></div>
-  <div class="hero__top">
-    <a class="brand" href="#topo">Zeus Pet Spa</a>
-    <a class="pill" href="https://wa.me/5551981407373"><b>4,7</b> · 53 avaliações no Google</a>
+<header class="nav" id="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="#inicio" aria-label="Zeus Pet Spa, início">Zeus <span>Pet Spa</span></a>
+    <nav class="nav-links" id="nav-links" aria-label="Seções">
+      <a href="#servicos">Serviços</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#agendar">Agendar e chegar</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu"><span></span><span></span></button>
   </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <picture class="hero-media">
+      <source media="(min-width: 900px)" srcset="media/hero-wide.webp" width="2000" height="1125">
+      <img src="media/hero-tall.webp" alt="" width="1000" height="1900" fetchpriority="high">
+    </picture>
+    <div class="hero-inner">
+      <p class="eyebrow">Banho e tosa no Mathias Velho</p>
+      <h1>Zeus <span>Pet Spa</span></h1>
+      <span class="meander short" aria-hidden="true"></span>
+      <p class="hero-lede">Banho e tosa com todo cuidado e carinho.<span class="lede-more"> E uma loja bem variada, com produtos e remédios para o seu pet.</span></p>
+      <a class="hero-proof" href="https://www.google.com/maps/search/?api=1&amp;query=Zeus+Pet+Spa+R.+Mato+Grosso+54+Mathias+Velho+Canoas+RS" target="_blank" rel="noopener noreferrer">
+        <span class="stars" aria-hidden="true">★</span> <b>4,7</b> no Google, em 53 avaliações
+      </a>
+      <div class="hero-actions">
+        <a class="button gold" data-whatsapp href="https://wa.me/5551981407373?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Zeus%20Pet%20Spa%20e%20quero%20agendar%20um%20banho%20e%20tosa." target="_blank" rel="noopener noreferrer">Agendar banho e tosa</a>
+        <a class="button ghost" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+    <span class="photo-note">Foto ilustrativa</span>
+    <span class="meander hero-edge" aria-hidden="true"></span>
+  </section>
+
+  <section class="block" id="servicos">
+    <div class="wrap services">
+      <div class="services-side">
+        <header class="heading align-start reveal">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Banho, tosa e loja</h2>
+          <span class="meander short" aria-hidden="true"></span>
+          <p class="heading-lede">Tudo no mesmo lugar, na R. Mato Grosso: o banho e a tosa do seu pet e o que ele usa em casa.</p>
+        </header>
+        <figure class="frame noted reveal">
+          <img src="media/towel.webp" alt="Buldogue francês preto enrolado numa toalha felpuda" width="1600" height="1200" loading="lazy">
+          <figcaption>Foto ilustrativa</figcaption>
+        </figure>
+      </div>
+      <ol class="service-list">
+        <li class="service reveal">
+          <span class="numeral" aria-hidden="true">I</span>
+          <div><h3>Banho</h3><p>Banho tranquilo, com cuidado e carinho do começo ao fim. O seu pet volta para casa limpo e perfumado.</p></div>
+        </li>
+        <li class="service reveal">
+          <span class="numeral" aria-hidden="true">II</span>
+          <div><h3>Tosa</h3><p>Tosa feita com calma, do jeito que você combinar com a equipe na hora de deixar o seu pet.</p></div>
+        </li>
+        <li class="service reveal">
+          <span class="numeral" aria-hidden="true">III</span>
+          <div><h3>Loja de produtos</h3><p>Uma loja bem variada, com o que o seu pet usa no dia a dia. Dá para resolver tudo na mesma visita.</p></div>
+        </li>
+        <li class="service reveal">
+          <span class="numeral" aria-hidden="true">IV</span>
+          <div><h3>Remédios para pets</h3><p>Remédios para pets na própria loja. Pergunte pelo WhatsApp se tem o que você procura.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Zeus Pet Spa">
+    <picture class="band-media" data-parallax>
+      <source media="(min-width: 900px)" srcset="media/band-wide.webp" width="2000" height="1333">
+      <img src="media/band-tall.webp" alt="" width="1000" height="909" loading="lazy">
+    </picture>
+    <div class="wrap band-inner">
+      <p class="band-line reveal">Um banho digno do Olimpo</p>
+      <p class="band-source reveal">Cuidado e carinho no Mathias Velho</p>
+    </div>
+    <span class="photo-note">Foto ilustrativa</span>
+  </section>
+
+  <section class="block dark" id="avaliacoes">
+    <span class="meander edge-top" aria-hidden="true"></span>
+    <div class="wrap">
+      <header class="heading reveal">
+        <p class="eyebrow">4,7 no Google, em 53 avaliações</p>
+        <h2>O que contam os tutores</h2>
+        <span class="meander short" aria-hidden="true"></span>
+      </header>
+      <div class="voices reveal" id="voices">
+        <ul class="voice-list">
+          <li class="voice is-active"><blockquote>“A Natália e Adriana são apaixonadas por pets. Ótimo atendimento!”</blockquote><p>Paula S.</p></li>
+          <li class="voice"><blockquote>“Atendimento nota 10! A loja é bem variada, e o banho e tosa deles é muito bom.”</blockquote><p>Miguel G.</p></li>
+          <li class="voice"><blockquote>“Loja bem variada […] são bem cuidadosos com os cãezinhos…”</blockquote><p>Marcelo K.</p></li>
+          <li class="voice"><blockquote>“Meu cachorro adora ir tomar banho lá…”</blockquote><p>Adroaldo M.</p></li>
+          <li class="voice"><blockquote>“Bom atendimento, variedades de produtos, e remédios.”</blockquote><p>Antonio M.</p></li>
+          <li class="voice"><blockquote>“Lugar ótimo, preços bons. Diversas opções de produtos, atendimento bom.”</blockquote><p>Misael O.</p></li>
+        </ul>
+        <div class="voice-dots" id="voice-dots" hidden></div>
+      </div>
+      <p class="voices-link reveal"><a href="https://www.google.com/maps/search/?api=1&amp;query=Zeus+Pet+Spa+R.+Mato+Grosso+54+Mathias+Velho+Canoas+RS" target="_blank" rel="noopener noreferrer">Ler as 53 avaliações no Google</a></p>
+    </div>
+    <span class="meander edge-bottom" aria-hidden="true"></span>
+  </section>
+
+  <section class="block" id="agendar">
+    <div class="wrap">
+      <header class="heading reveal">
+        <p class="eyebrow">Mathias Velho, Canoas</p>
+        <h2>Agende o banho do seu pet</h2>
+        <span class="meander short" aria-hidden="true"></span>
+        <p class="heading-lede">Mande uma mensagem pelo WhatsApp, combine o dia e o horário e traga o seu pet até a R. Mato Grosso.</p>
+      </header>
+      <div class="place">
+        <div class="booking reveal">
+          <a class="button gold wide" data-whatsapp href="https://wa.me/5551981407373?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Zeus%20Pet%20Spa%20e%20quero%20agendar%20um%20banho%20e%20tosa." target="_blank" rel="noopener noreferrer">WhatsApp (51) 98140-7373</a>
+          <a class="button line wide" href="tel:+5551981407373">Ligar agora</a>
+          <ul class="facts">
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Zeus+Pet+Spa+R.+Mato+Grosso+54+Mathias+Velho+Canoas+RS" target="_blank" rel="noopener noreferrer">R. Mato Grosso, 54, Mathias Velho, Canoas</a></li>
+            <li>Junto ao mercado, com estacionamento gratuito, como conta um cliente.</li>
+            <li>Entrada e estacionamento acessíveis para cadeira de rodas.</li>
+            <li>Cartão de crédito, débito e pagamento por aproximação.</li>
+            <li>Dia e horário combinados pelo WhatsApp.</li>
+          </ul>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa: Zeus Pet Spa, R. Mato Grosso, 54, Mathias Velho, Canoas" loading="lazy" referrerpolicy="no-referrer" src="https://maps.google.com/maps?q=Zeus+Pet+Spa+R.+Mato+Grosso+54+Canoas+RS&amp;z=16&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block owner" aria-labelledby="owner-title">
+    <div class="wrap owner-inner reveal">
+      <p class="owner-tag">Recado de quem fez esta página</p>
+      <h2 id="owner-title">Para a equipe do Zeus Pet Spa</h2>
+      <p>Sou o Conrado Lemos, desenvolvedor aqui de Canoas. Montei esta página para mostrar como ficaria o site de vocês. Tudo acima é o que o cliente veria.</p>
+      <ul>
+        <li>A nota, as avaliações, o endereço, os serviços e as formas de pagamento vieram do perfil de vocês no Google. Os horários não aparecem lá, por isso ficaram de fora até vocês me passarem.</li>
+        <li>Todas as fotos são ilustrativas, de banco de imagens. Na versão final entram fotos profissionais do espaço de vocês e dos pets que vocês atendem.</li>
+        <li>Textos, serviços e avaliações em destaque são revisados e escolhidos por vocês.</li>
+      </ul>
+      <p class="offer"><strong>R$ 1.000, com o site no ar em até 3 dias</strong> No endereço próprio do Zeus Pet Spa. O pagamento é só na entrega, depois da aprovação de vocês. O domínio é à parte, cerca de R$ 40 a R$ 55 por ano.</p>
+      <p class="next">Gostaram? É só responder a minha mensagem no WhatsApp.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
   <div class="wrap">
-    <div class="hero__copy">
-      <h1>Banho, tosa e <em>carinho</em> de verdade</h1>
-      <p class="hero__lead">Cuidado com calma para cães e gatos: produtos certos para cada pelagem, horário marcado e um espaço onde o pet sai feliz — e o tutor também.</p>
-      <div class="cta-row">
-        <a class="btn" href="https://wa.me/5551981407373">Agendar banho e tosa</a>
-        <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
-      </div>
-    </div>
+    <p class="footer-brand">Zeus <span>Pet Spa</span></p>
+    <span class="meander short" aria-hidden="true"></span>
+    <p class="footer-links">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Zeus+Pet+Spa+R.+Mato+Grosso+54+Mathias+Velho+Canoas+RS" target="_blank" rel="noopener noreferrer">R. Mato Grosso, 54, Canoas, RS</a>
+      <a href="https://www.instagram.com/zeuspetspa/" target="_blank" rel="noopener noreferrer">@zeuspetspa</a>
+    </p>
+    <p class="footer-small">Página de demonstração por Conrado Lemos.</p>
   </div>
-  <div class="scroll-hint">rolar</div>
-</section>
-
-<section>
-  <div class="wrap split reveal">
-    <div>
-      <p class="eyebrow">Banho e tosa · Canoas, RS</p>
-      <h2>Uma página com a mesma energia do seu pet shop</h2>
-      <p class="lead">Visual quente, fotos que mostram o cuidado e um botão direto para o WhatsApp. O cliente sente o lugar antes de atravessar a porta.</p>
-      <div class="cta-row">
-        <a class="btn" href="https://wa.me/5551981407373" style="color:#fff">Falar no WhatsApp</a>
-      </div>
-    </div>
-    <div class="photo-stack" aria-hidden="true">
-      <div class="photo-stack__main" style="background-image:url(https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80)"></div>
-      <div class="photo-stack__float" style="background-image:url(https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80)"></div>
-    </div>
-  </div>
-</section>
-
-<section id="servicos" style="background:linear-gradient(180deg, #fff, var(--paper))">
-  <div class="wrap reveal">
-    <p class="eyebrow">O que oferecemos</p>
-    <h2>Tudo para o seu pet sair feliz</h2>
-    <p class="lead">Na versão final entram os serviços, preços e fotos reais dos pets que vocês atendem. A estrutura e a identidade já estão prontas.</p>
-    <div class="services"><article class="service"><strong>Banho completo</strong><p>Banho, secagem, limpeza de ouvidos e corte de unhas com paciência.</p></article><article class="service"><strong>Tosa higiênica</strong><p>Mais conforto e limpeza no dia a dia do pet.</p></article><article class="service"><strong>Tosa na tesoura</strong><p>Corte de acordo com a raça e com o gosto do tutor.</p></article><article class="service"><strong>Hidratação</strong><p>Tratamento para pelagem macia, sem nós e sem ressecamento.</p></article><article class="service"><strong>Pacotes mensais</strong><p>Banhos recorrentes com valor especial e horário fixo.</p></article><article class="service"><strong>Produtos</strong><p>Itens selecionados para o cuidado continuar em casa.</p></article></div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap reveal">
-    <div class="quote-band">
-      <div>
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <div class="score">4,7</div>
-      </div>
-      <div>
-        <p>“Cuidado atencioso — o tipo de lugar que a gente indica para os amigos.”</p>
-        <small>Baseado em 53 avaliações públicas no Google · Zeus Pet Spa</small>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap reveal">
-    <p class="eyebrow">Como funciona</p>
-    <h2>Do primeiro contato ao atendimento</h2>
-    <p class="lead">Três passos simples, tudo combinado pelo WhatsApp.</p>
-    <div class="steps"><article class="step"><h3>Chame no WhatsApp</h3><p>Informe o porte e o tipo de pelo e escolha o horário.</p></article><article class="step"><h3>Traga o seu pet</h3><p>Recebemos com calma e conferimos tudo antes de começar.</p></article><article class="step"><h3>Busque cheiroso</h3><p>Avisamos pelo WhatsApp quando estiver pronto.</p></article></div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap reveal">
-    <div class="final">
-      <p class="eyebrow" style="color:var(--soft)">Pronto quando você estiver</p>
-      <h2>Agende o próximo banho</h2>
-      <p class="lead">Mande uma mensagem com o porte e o tipo de pelo. A gente responde rápido e marca o horário.</p>
-      <a class="btn" href="https://wa.me/5551981407373">Agendar banho e tosa</a>
-      <div class="final-meta">
-        <span>R. Mato Grosso, 54, Canoas, RS</span>
-        <span>(51) 98140-7373</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">Zeus Pet Spa · R. Mato Grosso, 54, Canoas, RS · Página de demonstração por Conrado Lemos · fotos de referência até a troca pelas imagens reais do estabelecimento</div>
 </footer>
 
-<script>
-(() => {
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('is-in'); });
-  }, { threshold: 0.16 });
-  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-})();
-</script>
+<a class="float" id="float" data-whatsapp href="https://wa.me/5551981407373?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Zeus%20Pet%20Spa%20e%20quero%20agendar%20um%20banho%20e%20tosa." target="_blank" rel="noopener noreferrer" aria-label="Agendar banho e tosa pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm0 18.200a8.200 8.200 0 0 1-4.200-1.150l-.300-.180-3 .780.800-2.900-.200-.300A8.200 8.200 0 1 1 12 20.200Zm4.500-6.100c-.250-.120-1.450-.720-1.680-.800-.220-.080-.390-.120-.550.130-.160.240-.630.800-.770.960-.140.160-.280.180-.530.060a6.700 6.700 0 0 1-1.970-1.220 7.400 7.400 0 0 1-1.370-1.700c-.140-.250 0-.380.110-.500l.370-.420c.120-.140.160-.250.240-.410.080-.160.040-.310-.020-.430l-.760-1.820c-.200-.480-.400-.410-.550-.420h-.470a.900.900 0 0 0-.650.300 2.700 2.700 0 0 0-.850 2.020c0 1.190.870 2.340.990 2.500.120.160 1.710 2.610 4.140 3.660.580.250 1.030.400 1.380.510.580.180 1.110.160 1.520.100.470-.070 1.450-.590 1.650-1.160.200-.570.200-1.060.140-1.160-.060-.100-.220-.160-.470-.280Z"/></svg>
+</a>
+
+<script src="vendor/lenis.min.js" defer></script>
+<script src="js/site.js" defer></script>
 </body>
 </html>
